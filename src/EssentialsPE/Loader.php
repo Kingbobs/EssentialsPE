@@ -94,7 +94,7 @@ class Loader extends PluginBase{
         // Before anything else...
         $this->checkConfig();
 
-        // Custom API Setup :3
+        // Custom API Setup :4
         $this->getServer()->getPluginManager()->callEvent($ev = new CreateAPIEvent($this, BaseAPI::class));
         $class = $ev->getClass();
         $this->api = new $class($this);
